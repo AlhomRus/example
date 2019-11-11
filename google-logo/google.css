@@ -1,0 +1,29 @@
+.google {
+    margin-top: 100px;
+    margin-left: 120px;
+    display: block;
+    width: 75px;
+    height: 50px;
+    position: relative;
+    border-top: 50px solid #4285f4;
+    border-right: 50px solid #4285f4;
+    border-bottom: 50px solid #4285f4;
+    border-radius: 0px 0px 250px 0px;
+    box-sizing: content-box;
+}
+
+.google:before {
+    content: '';
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-top: 50px solid #ea4335;
+    border-left: 50px solid #fbbc05;
+    border-bottom: 50px solid #34a853;
+    border-right: 50px solid transparent;
+    border-radius: 200px;
+    box-sizing: border-box;
+    position: absolute;
+    right: -50px;
+    top: -150px;
+}
