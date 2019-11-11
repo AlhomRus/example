@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:"Roboto",sans-serif;
+}
+body {
+    background:#aeaeaf;
+}
+.container {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:560px;
+    height:310px;
+}
+.container > div {
+    position:absolute;
+    width:50%;
+    height:100%;
+}
+.container .aside {
+    background:#2d2d2d;
+    text-align:center;
+    padding:25px 15px;
+    color:#eee;
+}
+.container .aside img {
+    width:60px;
+    height:60px;
+}
+.container .aside h2 {
+    margin-top:6px;
+    font-size:25px;
+    margin-bottom:10px;
+    font-weight:500;
+}
+.container .aside p {
+    font-size:13px;
+}
+.container .aside .links {
+    position:absolute;
+    bottom:30px;
+    left:20px;
+}
+.container .aside .links div {
+    margin:10px;
+    font-size:15px;
+    cursor:pointer;
+    position:relative;
+}
+.container .aside .links div:before {
+    content:"";
+    width:8px;
+    height:8px;
+    top:5px;
+    position:absolute;
+    background:#eee;
+    border-radius:50%;
+    left:-14px;
+}
+.container .login {
+    right:0px;
+    padding:45px 30px;
+    background:#fff;
+}
+.container .login .form-row {
+    margin:12px 0px;
+}
+.container .login label {
+    font-size:15px;
+    font-weight:500;
+}
+.container .login input {
+    width:100%;
+    height:30px;
+}
+.container .login .form-row input[type="email"],
+.container .login .form-row input[type="password"] {
+    padding-left:5px;
+    padding-right:5px;
+}
+.container .login .rem {
+    margin:15px 0px;
+}
+.container .login .rem input{
+    width:13px;
+    height:13px;
+}
+.container .login button {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #714ff1;
+    outline: none;
+    background: #7e5bff;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    box-shadow: 0px 5px 0px #523aab;
+    cursor:pointer;
+}
