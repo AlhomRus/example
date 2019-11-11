@@ -1,0 +1,84 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:"Raleway";
+}
+body {
+    background:#f4f4f4;
+}
+.container {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:250px;
+    height:170px;
+    background:#fff;
+    box-shadow:1px 3px 10px #aaa;
+    display:flex;
+    flex-direction:column;
+}
+.container .row {
+    flex:1;
+    display:block;
+    margin:10px 0px;
+    padding:0px 15px;
+}
+.container .row span {
+    font-size:14px;
+    margin-right:10px;
+    color:#777;
+    font-weight:600;
+}
+input[type="checkbox"] {
+    display:none;
+}
+label {
+    width:40px;
+    height:18px;
+    background:#aaa;
+    position:absolute;
+    border-radius:15px;
+    transition:all 250ms ease;
+}
+label:before {
+    content:"";
+    position:absolute;
+    background:#fff;
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    top:-2px;
+    left:-2px;
+    box-shadow:2px 2px 15px #555;
+    transition:all 300ms ease-in-out;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label:before {
+    left:23px;
+}
+#theme-1:checked + label {
+    background:#96b9f1;
+}
+#theme-1:checked + label:before {
+    background:#276dd8;
+}
+#theme-2:checked + label {
+    background:#f7b0dd;
+}
+#theme-2:checked + label:before {
+    background:#dc63b1;
+}
+#theme-3:checked + label {
+    background:#f7c09f;
+}
+#theme-3:checked + label:before {
+    background:#ea742c;
+}
+#theme-4:checked + label {
+    background:#70e8b8;
+}
+#theme-4:checked + label:before {
+    background:#279a6c;
+}
