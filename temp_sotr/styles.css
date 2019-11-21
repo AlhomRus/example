@@ -1,0 +1,16 @@
+.staff-member {
+    width: 700px;
+    background-color: #a5a6a7;
+}
+
+.foto {
+    width: 200px;
+    height: 250px;
+    float: left;
+    background-color: #34a853;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}

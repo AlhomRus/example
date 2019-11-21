@@ -1,0 +1,23 @@
+.container {
+        /*Обозначаем, что контейнер flex*/
+    display: flex;
+        /*высота контейнера*/
+    height: 500px;
+        /*Цвет фона*/
+    background-color: #a5a6a7;
+        /*Выравнивание контента по горизонтали - flex-start, flex-end, center, space-between, space-around*/
+    justify-content: space-between;
+        /*Выравнивание контента по вертикали - flex-start, flex-end, center, baseline*/
+    align-items: center;
+        /*Направление элементов - row, row-reverse, column, column-reverse*/
+    flex-direction: column;
+        /*Многострочность  элементов - nowrap, wrap, wrap-reverse*/
+    flex-wrap: wrap;
+        /*Заполнение контента по вертикали - stretch, lex-start, flex-end, center, space-between, space-around*/
+    align-content: space-between;
+}
+
+.item {
+    background-color: #bab1cc;
+    border: 1px solid red;
+}
