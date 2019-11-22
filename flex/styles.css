@@ -1,23 +1,39 @@
 .container {
-        /*Обозначаем, что контейнер flex*/
+    /*Обозначаем, что контейнер flex*/
     display: flex;
-        /*высота контейнера*/
+    /*высота контейнера*/
     height: 500px;
-        /*Цвет фона*/
+    /*Цвет фона*/
     background-color: #a5a6a7;
-        /*Выравнивание контента по горизонтали - flex-start, flex-end, center, space-between, space-around*/
+    /*Выравнивание контента по горизонтали - justify-content: flex-start, flex-end, center, space-between, space-around*/
     justify-content: space-between;
-        /*Выравнивание контента по вертикали - flex-start, flex-end, center, baseline*/
+    /*Выравнивание контента по вертикали - align-items: flex-start, flex-end, center, baseline*/
     align-items: center;
-        /*Направление элементов - row, row-reverse, column, column-reverse*/
-    flex-direction: column;
-        /*Многострочность  элементов - nowrap, wrap, wrap-reverse*/
+    /*Направление элементов - flex-direction:row, row-reverse, column, column-reverse*/
+    flex-direction: row;
+    /*Многострочность  элементов - flex-wrap:nowrap, wrap, wrap-reverse*/
     flex-wrap: wrap;
-        /*Заполнение контента по вертикали - stretch, lex-start, flex-end, center, space-between, space-around*/
+    /*Заполнение контента по вертикали - align-content:stretch, lex-start, flex-end, center, space-between, space-around*/
     align-content: space-between;
 }
 
 .item {
     background-color: #bab1cc;
     border: 1px solid red;
+    /*Базовая ширина элементов flex-basis*/
+    flex-basis:150px;
+    /*центрируем текст внутри контейнера*/
+    text-align: center;
+}
+
+.active {
+    background-color: #1eff53;
+    /*Порядок элементов order: 0, -1, 1*/
+
+    /*Растяжение элементов flex-grow: и указываем степень увеличения*/
+
+    /*Сужение элементов flex-shrink: и указываем степень сужения*/
+
+    /*выравнивае отдельных элементов  align-self - auto, flex-start, flex-end, center baseline stretch*/
+    align-self: stretch;
 }
